@@ -23,16 +23,39 @@
         rel="stylesheet">
     <!-- リセットCSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Smart Tab -->
     <link href="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/css/smart_tab_all.min.css" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/style/main.css">
+    <link rel="stylesheet" href="/assets/style/main.css">
 </head>
 
 <body>
     <!-- ヘッダー -->
     <header class="header">
+        <div class="header__container">
+            <h1 class="header__title">
+                <a href="/" class="header__titleLink poppins">Kira-Kira Juku</a>
+            </h1>
 
+            <!-- ドロワーメニュー用ボタン -->
+            <button type="button" class="drawer-button">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- 共通メニュー -->
+            <div class="header__commonMenu">
+                <nav>
+                    <ul class="header__commonMenu--group">
+                        <li><a href="#"><i class="bi bi-arrow-right-short"></i>選ばれる3つの理由</a></li>
+                        <li><a href="#"><i class="bi bi-arrow-right-short"></i>コース・目的</a></li>
+                        <li><a href="#"><i class="bi bi-arrow-right-short"></i>費 用</a></li>
+                    </ul>
+                </nav>
+                <a href="/entry" class="button button-header">入学説明会に申し込む</a>
+            </div>
+        </div>
     </header>
 
     <!-- メイン -->
@@ -89,7 +112,7 @@
     <!-- Smart Tab -->
     <script src="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/js/jquery.smartTab.min.js"></script>
     <!-- js -->
-    <script src="./assets/script/main.js"></script>
+    <script src="/assets/script/main.js"></script>
 </body>
 
 </html>

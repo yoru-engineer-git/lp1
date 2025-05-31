@@ -32,9 +32,189 @@ ul {
 
 /* 共通
 ---------------------------------------------------------------------------------------------- */
+.poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.button {
+    font-weight: 700;
+}
 
 /* ヘッダー
 ---------------------------------------------------------------------------------------------- */
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 4.375rem;
+    padding-left: 1rem;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 75rem;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .header__container {
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        height: 7.3125rem;
+        padding-left: 0;
+    }
+}
+
+.header__titleLink {
+    font-size: 1.375rem;
+    color: #005BAC;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .header__titleLink {
+        font-size: 2rem;
+    }
+}
+
+/* ドロワーボタン */
+.drawer-button {
+    width: 4.75rem;
+    height: 5rem;
+    font-size: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #005BAC;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+
+    .drawer-button,
+    .header__commonMenu--group i {
+        display: none;
+    }
+}
+
+/* ドロワーメニュー */
+@media (max-width: 767.9px) {
+    .header__commonMenu {
+        position: fixed;
+        top: 4.7rem;
+        left: 0;
+        right: 0rem;
+        padding: 1.25rem;
+        padding-bottom: 2rem;
+        background-color: #005BAC;
+        transition: all .3s linear;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* SP表示時：ドロワーメニューアクティブ */
+.header__commonMenu-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header__commonMenu--group a {
+    font-weight: 500;
+}
+
+@media (max-width: 767.9px) {
+    .header__commonMenu--group li {
+        line-height: calc(1.125rem + 1.25rem * 2);
+    }
+
+    .header__commonMenu--group a {
+        font-size: 1.125rem;
+        color: #fff;
+        border-bottom: 0.0625rem solid #707070;
+        display: block;
+    }
+
+    .header__commonMenu--group i {
+        margin-right: 0.75rem;
+    }
+}
+
+@media (max-width: 767.9px) {
+    .button-header {
+        max-width: 21.875rem;
+        display: block;
+        color: #005BAC;
+        font-size: 1.125rem;
+        text-align: center;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2rem;
+        border-radius: 2.0625rem;
+        background-color: #fff;
+    }
+
+    .button-header:hover {
+        opacity: .5;
+        color: rgb(0, 91, 172, .5);
+    }
+}
+
+/* PC表示時 */
+@media (min-width: 768px) {
+    .header__commonMenu {
+        display: flex;
+        column-gap: 3rem;
+    }
+
+    .header__commonMenu--group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 3rem;
+        height: 100%;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .header__commonMenu--group a {
+        font-size: 1.25rem;
+        color: #333;
+    }
+}
+
+@media (min-width: 768px) {
+    .button-header {
+        max-width: 17.625rem;
+        display: block;
+        color: #fff;
+        font-size: 1.25rem;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2.5625rem;
+        padding-right: 2.5625rem;
+        border-radius: 1.9375rem;
+        background: linear-gradient(to right, #0271E0, #53A2F0);
+    }
+
+    .button-header:hover {
+        opacity: .5;
+        color: rgb(255, 255, 255, .5);
+    }
+}
 
 /* メイン
 ---------------------------------------------------------------------------------------------- */
